@@ -1,0 +1,27 @@
+var myPeerConnection = new RTCPeerConnection({
+  iceServers: [
+      {
+        urls: "stun:stun.relay.metered.ca:80",
+      },
+      {
+        urls: "turn:global.relay.metered.ca:80",
+        username: "000fd4fc180e328b9ea02e59",
+        credential: "BTR/8+kgb9dqCBZq",
+      },
+      {
+        urls: "turn:global.relay.metered.ca:80?transport=tcp",
+        username: "000fd4fc180e328b9ea02e59",
+        credential: "BTR/8+kgb9dqCBZq",
+      },
+      {
+        urls: "turn:global.relay.metered.ca:443",
+        username: "000fd4fc180e328b9ea02e59",
+        credential: "BTR/8+kgb9dqCBZq",
+      },
+      {
+        urls: "turns:global.relay.metered.ca:443?transport=tcp",
+        username: "000fd4fc180e328b9ea02e59",
+        credential: "BTR/8+kgb9dqCBZq",
+      },
+  ],
+});
